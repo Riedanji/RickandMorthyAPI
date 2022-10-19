@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-label>DETALLE DEL EPISODIO</ion-label>
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="episodedetail">
+  <ion-grid>
+    
+      <ion-col>
+        <h3><b>Nombre: </b> {{ episode.name }}</h3>
+        <h3><b>Episodio: </b> {{ episode.episode }}</h3>
+        <h3><b>URL: </b> {{ episode.url }}</h3>
+        <h3><b>Fecha lanzamiento: </b> {{ episode.air_date }}</h3>
+       
+      </ion-col>
+    
+
+    
+  </ion-grid>
+</ion-content>
